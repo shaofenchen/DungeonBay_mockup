@@ -1,11 +1,40 @@
+$black: #200;
+$linkColor: #46a546;
 @import "bootstrap";
-
-html {
-  overflow-y: scroll;
-}
-
 body {
   padding-top: 60px;
+}
+
+
+@import "bootstrap-responsive";
+.nav-icon{
+margin-top:12px;
+margin-right: -5px;
+float:right;
+}
+.carousel
+{margin-top: -10px;}
+
+.recomment{
+margin-left:50px;
+padding-left:50px;
+}
+
+.form-actions{
+margin-top:0px;
+}
+
+.orange{
+color: #f89406;
+margin-bottom: 10px;
+}
+
+.priceOld{
+	color: #333;
+	text-decoration: line-through;
+}
+.priceNew{
+	color: #F30;
 }
 
 section {
@@ -28,21 +57,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.7em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: #999;
-}
 
 p {
   font-size: 1.1em;
@@ -53,8 +67,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
+  color:  #46a546;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -63,7 +76,7 @@ p {
 }
 
 #logo:hover {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 

@@ -9,24 +9,101 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <header class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <%= link_to "sample app", '#', id: "logo" %>
-          <nav>
-            <ul class="nav pull-right">
-              <li><%= link_to "Home",    '#' %></li>
-              <li><%= link_to "Help",    '#' %></li>
-              <li><%= link_to "Sign in", '#' %></li>
-            </ul>
-          </nav>
+<body>
+
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+		<li class ="brand", id="logo" ><%= link_to "DungeonBay", home_path %></li>
+       
+        <div class="nav-collapse">
+          <ul class="nav pull-right">
+		  <li><i class="icon-user icon-white nav-icon"></i></li>
+            <li><%= link_to " My DungeonBay" , myAccount_path%> </li>
+		<li><%= link_to " Recharge", recharge_path%></li>
+            <li><%= link_to " Contact Us", contact_path %></li>
+            <li><%= link_to " Cart", cart_path %></li>
+          </ul>
         </div>
       </div>
-    </header>
-    <div class="container">
-      <%= yield %>
-<%= render 'layouts/footer' %>
     </div>
+  </div>
+<div class = "container">
+
+  <div class="container">
+    <div class="row">
+	<div class ="span2">      
+	<div class="well" style="padding: 8px 0;">
+        <ul class="nav nav-list">
+          <li class="nav-header">Browse by Category</li>
+          <li class="active"><a href="#">Equipments</a></li>
+          <li><a href="#">Adventure Tools</a></li>
+		  <li><a href="#">Category1</a></li>
+		  <li><a href="#">Category2</a></li>
+          <li class="nav-header">Browse by Roles</li>
+          <li><a href="#">Category1</a></li>
+          <li><a href="#">Category2</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="span7">
+	 <form class="form-search">
+	 <div class = "form-actions">
+	   <select class="medium">
+                                <option>Select a category</option>
+								<option>All</option>
+                                <option>Category1</option>
+                                <option>Category2</option>
+                                <option>Category3</option>
+                                <option>Category4</option>
+      </select>
+  <input type="text" class="input-large search-query">
+  <a href="dynamic_pages/searchResult" type="submit" class="btn  btn-primary">Search in DungeonBay</a>
+  </div>
+</form>
+
+
+	  <%= yield %>
+
+	  </div>
+      <div class="span3">
+<ul class="thumbnails">
+  <li class="span3">
+    <a href="#" class="thumbnail">
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/img12/office-products/300-column/panasonic_b2b-deals_300.png" alt="Advertisement goes here">
+    </a>
+  </li>
+    <li class="span3">
+    <a href="#" class="thumbnail">
+      <img src="http://img-cdn.mediaplex.com/0/13001/101281/112911_AMZ_300x250_umberto_purple_AMZ_LP.jpg" alt="Advertisement goes here">
+    </a>
+	
+  </li>
+    <li class="span3">
+    <a href="#" class="thumbnail">
+      <img src="http://www.top1mmo.com/images/call-of-gods-pop-up-800-440.jpg" alt="Advertisement goes here">
+    </a>
+  </li>
+    </li>
+    <li class="span3">
+    <a href="#" class="thumbnail">
+      <img src="http://g-ecx.images-amazon.com/images/G/01/books/amyhorn/student_2_day_non-4_300x75._V142322511_.gif" alt="Advertisement goes here">
+    </a>
+  </li>
+
+</ul>
+      </div>
+    </div>
+	<%= render "layouts/footer" %>
+  </div>
+	
+
   </body>
 </html>

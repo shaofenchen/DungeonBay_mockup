@@ -1,9 +1,30 @@
 AppTest::Application.routes.draw do
-root :to => 'static_pages#home'
-  get "static_pages/home"
+  get "dynamic_pages/searchResult"
+match 'searchResult' => 'dynamic_pages#searchResult'
+  get "dynamic_pages/itemDetail"
+match 'itemDetail' => 'dynamic_pages#itemDetail'
+  get "dynamic_pages/myAccount"
+match 'myAccount' => 'dynamic_pages#myAccount'
+  get "dynamic_pages/recharge"
+match 'recharge' => 'dynamic_pages#recharge'
+  get "dynamic_pages/order"
+match 'order' => 'dynamic_pages#order'
 
+  get "dynamic_pages/cart"
+match 'cart' => 'dynamic_pages#cart'
+
+
+root :to => 'static_pages#home'
+
+
+
+  get "static_pages/home"
+match 'home' => 'static_pages#home'
+get "static_pages/contact"
+match 'contact' => 'static_pages#contact'
   get "static_pages/help"
   get "static_pages/about"
+match 'about' => 'static_pages#about'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
