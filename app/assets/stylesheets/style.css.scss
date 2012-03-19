@@ -4,9 +4,13 @@ $linkColor: #46a546;
 body {
   padding-top: 60px;
 }
-
-
 @import "bootstrap-responsive";
+
+
+#content {
+background: url(image/contents-bg.png);
+}
+
 .nav-icon{
 margin-top:12px;
 margin-right: -5px;

@@ -25,6 +25,11 @@ match 'contact' => 'static_pages#contact'
   get "static_pages/help"
   get "static_pages/about"
 match 'about' => 'static_pages#about'
+  get "static_pages/signup"
+match 'signup' => 'static_pages#signup'
+
+  get "static_pages/login"
+match 'login' => 'static_pages#login'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -9,7 +9,7 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-<body>
+<body id="body">
 
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -19,7 +19,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-		<li class ="brand", id="logo" ><%= link_to "DungeonBay", home_path %></li>
+		<li class ="brand" id="logo" ><%= link_to "DungeonBay", home_path %></li>
        
         <div class="nav-collapse">
           <ul class="nav pull-right">
@@ -28,14 +28,15 @@
 		<li><%= link_to " Recharge", recharge_path%></li>
             <li><%= link_to " Contact Us", contact_path %></li>
             <li><%= link_to " Cart", cart_path %></li>
+			<li><%= link_to " Logout" %></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-<div class = "container">
-
-  <div class="container">
+  
+<div class = "container" id = "content">
+  <div class="container" >
     <div class="row">
 	<div class ="span2">      
 	<div class="well" style="padding: 8px 0;">
@@ -103,7 +104,7 @@
     </div>
 	<%= render "layouts/footer" %>
   </div>
-	
+	</div>
 
   </body>
 </html>
