@@ -2,7 +2,7 @@
 DungeonBay mock-ups developed using Twitter Bootstrap
 
 Heroku links:
-link:gentle-mist-2229.herokuapp.com.
+link:http://gentle-mist-2229.herokuapp.com.
 
 Including below pages design:
   * home
