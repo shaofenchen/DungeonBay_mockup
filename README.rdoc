@@ -8,7 +8,7 @@ Including below pages design:
   * home
 link:http://gentle-mist-2229.herokuapp.com/
 
-  *about
+  * about
 link:http://gentle-mist-2229.herokuapp.com/about
 
   * results page
@@ -17,8 +17,17 @@ link:http://gentle-mist-2229.herokuapp.com/searchResult
   * view individual item (including ability to bid)
 link:http://gentle-mist-2229.herokuapp.com/itemDetail
 
-  * cart
+  * Login
+link:http://gentle-mist-2229.herokuapp.com/login
+
+ * Sign up
+link:http://gentle-mist-2229.herokuapp.com/signup
+
+ * cart
 link:http://gentle-mist-2229.herokuapp.com/cart
+
+ * Recharge account
+link:http://gentle-mist-2229.herokuapp.com/recharge
 
  * checkout
 link:http://gentle-mist-2229.herokuapp.com/order
